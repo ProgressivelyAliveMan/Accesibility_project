@@ -8,27 +8,34 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <div class="boton" style="--color:#4CAF50; --texto: 'Español';">
+
+  <div class="boton" data-audio="espanol.mp3" style="--color:#4CAF50; --texto: 'Español';">
+    <i class='bx bx-play icono'></i>
     <span>Español</span>
   </div>
 
-  <div class="boton" style="--color:#FFA500; --texto: 'English';">
+  <div class="boton" data-audio="ingles.mp3" style="--color:#FFA500; --texto: 'English';">
+    <i class='bx bx-play icono'></i>
     <span>Inglés</span>
   </div>
 
-  <div class="boton" style="--color:#B71C1C; --texto: '中文';">
+  <div class="boton" data-audio="chino.mp3" style="--color:#B71C1C; --texto: '中文';">
+    <i class='bx bx-play icono'></i>
     <span>Chino</span>
   </div>
 
-  <div class="boton" style="--color:#00ACC1; --texto: 'Português';">
+  <div class="boton" data-audio="portugues.mp3" style="--color:#00ACC1; --texto: 'Português';">
+    <i class='bx bx-play icono'></i>
     <span>Portugués</span>
   </div>
 
   <footer class="borders">
-    <ul class="social-icons">
-      <li><a><i class='bx bxl-instagram-alt'></i></a></li>
-      <li><a><i class='bx bxl-github' ></i></a></li>
+    <div class="social-icons">
+      <div><a><i class='bx bxl-instagram-alt'></i></a></div>
+      <div><a><i class='bx bxl-github'></i></a></div>
+    </div>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
-

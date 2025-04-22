@@ -1,13 +1,18 @@
 body {
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: white;
     font-family: sans-serif;
   }
 
 .social-icons{
     text-align: center;
-    padding: 10px;
+    width: 100%;
+}
+
+.social-icons div{
+  padding-left: 16.5%;
+  padding-right: 16.5%;
 }
 
 .social-icons i{
@@ -20,7 +25,7 @@ body {
     background-color: var(--color);
     color: white;
     height: 120px;
-    margin: 20px 0;
+    margin: 20px 20px 20px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,28 +45,38 @@ body {
   .boton::before {
     content: var(--texto);
     position: absolute;
-    font-size: 100px;
+    font-size: 80px;
     color: rgba(255, 255, 255, 0.1);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
     pointer-events: none;
+    z-index: 0;
+  }
+  
+  .boton .icono {
+    font-size: 32px;
+    z-index: 1;
+  }
+  
+  .boton span {
+    z-index: 1;
   }
 
   .borders {
     background-color: #000;
     display: flex;
-    height: 100px;
+    height: 200px;
     width: 100%;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
   }
 
-  ul{
-    display: flex;
-  }
 
   .borders div {
     display: flex;
+    justify-content: center;
   }
     
